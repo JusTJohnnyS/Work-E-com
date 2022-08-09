@@ -135,6 +135,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 
 h1 {
@@ -150,8 +151,41 @@ h2 {
   text-align: center;
 }
 
+.header__description{
+ width:100%;
+ text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
 .btn {
   background-color: #7342d6;
   color: white;
   padding: 12px 24px;
+  border-radius: 25%;
+}
+
+.btn:active{
+  transform: translateY(2px);
+}
+
+
+.container{
+  padding:56px 0;
+  
+}
+
+.row{
+  width:100%;
+  max-width: 1200px;
+  margin: 0 auto;  
+}
+
+/* Highlights */
+
+.highlight__wrapper{
+  display:flex;
+  padding:0 24px;
 }
