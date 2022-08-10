@@ -77,7 +77,14 @@ nav {
 
 img {
   width: 100%;
+  
 }
+
+i{
+  color:#7342d6;
+}
+
+
 
 .purple {
   color: #7342d6;
@@ -188,4 +195,32 @@ button{
 .highlight__wrapper{
   display:flex;
   padding:0 24px;
+}
+
+.highlights{
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.highlight__para{
+  text-align:center;
+}
+
+.highlight__img{
+  border: 2px solid black;
+  padding:20px;
+}
+
+.highlight__img:hover{
+  cursor: pointer;
+}
+
+.highlight__img:active{
+  transform: translateY()
+}
+
+.highlight__subtitle{
+  padding: 8px 0;
 }
