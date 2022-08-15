@@ -7,56 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*
-li{
-    list-style:none;
-    padding:0;
-}                                                           My attempt to at the nav bar
-
-a{
-    text-decoration:none;
-    
-}
-
-nav{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    justify-content: space-around;
-}
-
-.nav__picture{
-    width:100%;
-    height: 100px;
-}
-
-.nav__link--wrapper{
-    width:100%;
-    
-    
-}
-
-.nav__links{
-    
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    
-}
-
-.nav__link{
-    font-size:18px;
-    /*padding-right:8px;
-    
-}
-
-.nav__border{
-    border: 2px solid black;
-    border-radius:8px square;
-} 
-
-*/
 
 li {
   list-style: none;
@@ -75,14 +25,19 @@ nav {
   display: flex;
 }
 
+p{
+  line-height: 1.5;
+}
+
 img {
   width: 100%;
+  height:100%;
+  max-height: 50vh;
+  padding:20px;
   
 }
 
-i{
-  color:#7342d6;
-}
+
 
 
 
@@ -102,6 +57,7 @@ i{
 
 .logo {
   width: 160px;
+  padding:0;
 }
 
 .nav__link {
@@ -163,6 +119,11 @@ h2 {
  text-align: center;
 }
 
+.img__wrapper{
+  padding:20px;
+  z-index:2;
+}
+
 button{
   cursor: pointer;
 }
@@ -179,6 +140,8 @@ button{
 }
 
 
+
+
 .container{
   padding:56px 0;
   
@@ -192,35 +155,77 @@ button{
 
 /* Highlights */
 
-.highlight__wrapper{
-  display:flex;
-  padding:0 24px;
+#highlights{
+  position: relative;
 }
 
-.highlights{
-display: flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+#highlights:before {
+  background: url('images/Library.svg');
+  content:"";
+  position:absolute;
+  width:101vw;
+  height:12vw;
+  top:1px;
+  left:0;
+  z-index:1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+ 
+/*
+  top:1px;
+  left:0;
+  transform: translateY(-100%);
+  width:101vw;
+  height:12vw;
+  background-size:cover;
+  background-repeat:no-repeat;
+  z-index: 1; */
+}
+
+#highlights:after{
+  background: url('images/wave.svg');
+  content:"";
+  position: absolute;
+  width: 101vw;
+  height:12vw;
+ 
+}
+
+.highlight__wrapper{
+  display:flex;
+}
+
+.highlight{
+  padding:0 24px;
+  width:calc(100% / 3);
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
 }
 
 .highlight__para{
-  text-align:center;
+  text-align: center;
+  max-width:280px ;
 }
 
 .highlight__img{
-  border: 2px solid black;
-  padding:20px;
-}
-
-.highlight__img:hover{
-  cursor: pointer;
-}
-
-.highlight__img:active{
-  transform: translateY()
+  border:2px solid #7342d65d;
+  color:#7342d6;
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  border-radius:4px;
+  font-size:32px;
+  margin:24px;
 }
 
 .highlight__subtitle{
-  padding: 8px 0;
+  font-size:20px;
+  margin-bottom: 16px;
 }
+
